@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Snake</title>
+  
+  <!-- Favicon estándar -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon_io/favicon.ico">
+  
+  <!-- Iconos para dispositivos Android -->
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon_io/android-chrome-192x192.png">
+  
+  <!-- Icono para dispositivos Apple -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  
+  <!-- Archivo manifest para compatibilidad con apps web progresivas -->
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+
+  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="Snake.js"></script>
+  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+
+  <style>
+    @font-face {
+      font-family: "Snake";
+      src: url("SnakeGameDemoRegular.ttf") format("truetype");
+    }
+    
+    @font-face {
+      font-family: "Pixel";
+      src: url("Tiny5-Regular.ttf") format("truetype");
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #121212;
+      color: white;
+      font-family: "Snake", sans-serif;
+      letter-spacing: 5px; 
+      text-align: center;
+    }
+
+    #canvas-container {
+      margin-bottom: 10px; 
+    }
+
+    footer {
+      font-size: 25px; 
+      line-height: 1.5rem; 
+      letter-spacing: 0px; 
+      text-align: center; 
+      font-family: "Pixel", sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Snake Game</h1>
+  <div id="canvas-container"></div> 
+  <footer>
+    <p> CONTROLES: <br>
+    ← → ↑ ↓ Mover la serpiente. <br>
+    R Reiniciar el juego.
+  </footer>
+</body>
+</html>
